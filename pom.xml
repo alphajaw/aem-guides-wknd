@@ -356,11 +356,10 @@ Bundle-DocURL:
                 </plugin>
                 <!-- AEM Analyser Plugin -->
                 <plugin>
-                    <groupId>com.adobe.aem</groupId>
-                    <artifactId>aemanalyser-maven-plugin</artifactId>
-                    <version>${aemanalyser.version}</version>
-                    <extensions>true</extensions>
-                </plugin>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>aemanalyser-maven-plugin</artifactId>
+    <version>1.x.x</version> <!-- use latest version -->
+</plugin>
                 <!-- Content Package Plugin -->
                 <plugin>
                     <groupId>com.day.jcr.vault</groupId>
@@ -481,19 +480,19 @@ Bundle-DocURL:
             </properties>
 
             <repositories>
-                <repository>
-                    <id>adobe-public-releases</id>
-                    <name>Adobe Public Repository</name>
-                    <url>https://repo.adobe.com/nexus/content/groups/public</url>
-                    <releases>
-                        <enabled>true</enabled>
-                        <updatePolicy>never</updatePolicy>
-                    </releases>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                </repository>
-            </repositories>
+    <repository>
+        <id>adobe-public-releases</id>
+        <name>Adobe Public Repository</name>
+        <url>https://repo.adobe.com/nexus/content/groups/public</url>
+        <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+        </releases>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+    </repository>
+</repositories>
 
             <pluginRepositories>
                 <pluginRepository>
