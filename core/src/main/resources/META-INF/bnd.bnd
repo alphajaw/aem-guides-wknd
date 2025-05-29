@@ -1,0 +1,5 @@
+Bundle-Version=3.3.0
+Bundle-SymbolicName=com.adobe.aem.guides.wknd.core
+Export-Package: \
+    com.adobe.aem.guides.wknd.core.models;version="2.2.0",\
+    *
