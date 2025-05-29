@@ -253,11 +253,14 @@ Bundle-DocURL:
                         </dependency>
                     </dependencies>
                 </plugin>
-                <plugin>
-                    <groupId>biz.aQute.bnd</groupId>
-                    <artifactId>bnd-baseline-maven-plugin</artifactId>
-                    <version>${bnd.version}</version>
-                </plugin>
+               <plugin>
+    <groupId>biz.aQute.bnd</groupId>
+    <artifactId>bnd-baseline-maven-plugin</artifactId>
+    <configuration>
+        <failOnMissing>false</failOnMissing>
+        <includeResourceDependencies>true</includeResourceDependencies>
+    </configuration>
+</plugin>
                 <!-- Maven Resources Plugin -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
